@@ -1,0 +1,28 @@
+PODS:
+  - Alamofire (5.6.4)
+  - KeychainSwift (20.0.0)
+  - SwiftLint (0.50.3)
+  - SwipeableTabBarController (3.4.2)
+
+DEPENDENCIES:
+  - Alamofire
+  - KeychainSwift (~> 20.0)
+  - SwiftLint
+  - SwipeableTabBarController
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - KeychainSwift
+    - SwiftLint
+    - SwipeableTabBarController
+
+SPEC CHECKSUMS:
+  Alamofire: 4e95d97098eacb88856099c4fc79b526a299e48c
+  KeychainSwift: 0ce6a4d13f7228054d1a71bb1b500448fb2ab837
+  SwiftLint: 77f7cb2b9bb81ab4a12fcc86448ba3f11afa50c6
+  SwipeableTabBarController: 9a218bdee9426d1bfe36d7962f852024bb08d61b
+
+PODFILE CHECKSUM: 5a0bc4a1e7b6fe33a5a61c3c0da5783060c23a5b
+
+COCOAPODS: 1.11.3

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="564" id="KGk-i7-Jjw" customClass="EditProfileTableViewCell" customModule="E_Mistri" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="389" height="564"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="389" height="564"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="QMq-q1-JXW">
+                        <rect key="frame" x="20" y="10" width="349" height="95"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8aM-6U-SVY">
+                                <rect key="frame" x="0.0" y="0.0" width="349" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LLB-I0-V0y" customClass="CustomTextField" customModule="E_Mistri" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="23" width="349" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="0Cx-Bq-ETg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DBt-a6-wGc" customClass="ErrorLabel" customModule="E_Mistri" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="78" width="349" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="a7D-Dj-Ysb">
+                        <rect key="frame" x="20" y="125" width="349" height="95"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mp7-49-bAd">
+                                <rect key="frame" x="0.0" y="0.0" width="349" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YpM-5o-12l" customClass="CustomTextField" customModule="E_Mistri" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="23" width="349" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="TyZ-tu-8r0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bZR-xl-kqC" customClass="ErrorLabel" customModule="E_Mistri" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="78" width="349" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="U4e-8A-bDv">
+                        <rect key="frame" x="20" y="240" width="349" height="73"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Ql-MU-Fgv">
+                                <rect key="frame" x="0.0" y="0.0" width="349" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jNr-9g-TiK" customClass="CustomTextField" customModule="E_Mistri" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="23" width="349" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="KUQ-aj-6Ai"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                    </stackView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="AA4-i7-MU7">
+                        <rect key="frame" x="20" y="333" width="349" height="73"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JT7-O4-kbv">
+                                <rect key="frame" x="0.0" y="0.0" width="349" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4bU-jb-qIk" customClass="CustomTextField" customModule="E_Mistri" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="23" width="349" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="34Q-ad-rQ7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                    </stackView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oiw-7F-pzu" customClass="CustomButton" customModule="E_Mistri" customModuleProvider="target">
+                        <rect key="frame" x="82" y="490" width="225" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="225" id="GQb-zp-tCU"/>
+                            <constraint firstAttribute="height" constant="50" id="pUR-St-rJG"/>
+                        </constraints>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="oiw-7F-pzu" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="0hR-G4-tFd"/>
+                    <constraint firstItem="a7D-Dj-Ysb" firstAttribute="top" secondItem="QMq-q1-JXW" secondAttribute="bottom" constant="20" id="5TA-rS-Afi"/>
+                    <constraint firstAttribute="trailing" secondItem="AA4-i7-MU7" secondAttribute="trailing" constant="20" id="8r5-gd-GFH"/>
+                    <constraint firstItem="U4e-8A-bDv" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="BDL-Of-1Lm"/>
+                    <constraint firstItem="AA4-i7-MU7" firstAttribute="top" secondItem="U4e-8A-bDv" secondAttribute="bottom" constant="20" id="BV9-w3-dGw"/>
+                    <constraint firstAttribute="trailing" secondItem="U4e-8A-bDv" secondAttribute="trailing" constant="20" id="Bdt-pS-4LY"/>
+                    <constraint firstItem="a7D-Dj-Ysb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="CxV-0a-elc"/>
+                    <constraint firstItem="QMq-q1-JXW" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="PbY-RR-4ot"/>
+                    <constraint firstItem="U4e-8A-bDv" firstAttribute="top" secondItem="a7D-Dj-Ysb" secondAttribute="bottom" constant="20" id="Q1v-xk-Ip7"/>
+                    <constraint firstAttribute="trailing" secondItem="QMq-q1-JXW" secondAttribute="trailing" constant="20" id="cN6-Gm-HxY"/>
+                    <constraint firstItem="oiw-7F-pzu" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="490" id="d7y-rd-Qw2"/>
+                    <constraint firstItem="QMq-q1-JXW" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="dZn-tF-Kym"/>
+                    <constraint firstAttribute="trailing" secondItem="a7D-Dj-Ysb" secondAttribute="trailing" constant="20" id="fwK-I0-lor"/>
+                    <constraint firstAttribute="bottom" secondItem="oiw-7F-pzu" secondAttribute="bottom" constant="13" id="rQP-2S-awd"/>
+                    <constraint firstItem="AA4-i7-MU7" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="zc7-05-YVR"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="addressLabel" destination="6Ql-MU-Fgv" id="s0t-vF-R6s"/>
+                <outlet property="addressTextField" destination="jNr-9g-TiK" id="uRM-Xk-zOi"/>
+                <outlet property="editProfileButton" destination="oiw-7F-pzu" id="qCp-nD-Aj0"/>
+                <outlet property="emailLabel" destination="JT7-O4-kbv" id="kLT-p7-dPC"/>
+                <outlet property="emailTextField" destination="4bU-jb-qIk" id="wdY-jY-PaZ"/>
+                <outlet property="fullNameErrorMessage" destination="DBt-a6-wGc" id="5JQ-cg-NUc"/>
+                <outlet property="fullNameLabel" destination="8aM-6U-SVY" id="KJP-va-WR5"/>
+                <outlet property="fullNameTextField" destination="LLB-I0-V0y" id="H1v-lu-LDh"/>
+                <outlet property="phoneNumberErrorMessage" destination="bZR-xl-kqC" id="l7p-KM-yly"/>
+                <outlet property="phoneNumberLabel" destination="mp7-49-bAd" id="NpC-u5-tUy"/>
+                <outlet property="phoneNumberTextField" destination="YpM-5o-12l" id="bpe-P3-faC"/>
+            </connections>
+            <point key="canvasLocation" x="104.58015267175573" y="202.81690140845072"/>
+        </tableViewCell>
+    </objects>
+</document>

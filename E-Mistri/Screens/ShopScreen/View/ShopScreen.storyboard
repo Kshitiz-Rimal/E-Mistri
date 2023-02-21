@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Gg1-rY-1Kc">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Shop-->
+        <scene sceneID="k6z-RH-Yfo">
+            <objects>
+                <viewController storyboardIdentifier="ShopScreenViewController" id="Gg1-rY-1Kc" customClass="ShopScreenViewController" customModule="E_Mistri" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="F3D-d3-huj">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BCv-4I-EGy">
+                                <rect key="frame" x="20" y="59" width="353" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="FKx-OH-Ugu">
+                                <rect key="frame" x="20" y="174" width="353" height="644"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="MUQ-Ul-THE">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="Ejc-3F-gYe">
+                                <rect key="frame" x="20" y="109" width="353" height="50"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zQX-3Q-Vle" customClass="CustomTextField" customModule="E_Mistri" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="278" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="Pb4-OM-6ao"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZnA-9R-VJb">
+                                        <rect key="frame" x="303" y="0.0" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="5PK-sb-X6X"/>
+                                            <constraint firstAttribute="width" constant="50" id="QxN-RV-Sz4"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled"/>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="v37-dp-0uq"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="2Jn-Js-POh"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="2Jn-Js-POh" firstAttribute="bottom" secondItem="FKx-OH-Ugu" secondAttribute="bottom" id="0x3-28-awT"/>
+                            <constraint firstItem="2Jn-Js-POh" firstAttribute="trailing" secondItem="BCv-4I-EGy" secondAttribute="trailing" constant="20" id="205-oR-27Z"/>
+                            <constraint firstItem="Ejc-3F-gYe" firstAttribute="top" secondItem="BCv-4I-EGy" secondAttribute="bottom" constant="20" id="655-vA-xhI"/>
+                            <constraint firstItem="FKx-OH-Ugu" firstAttribute="top" secondItem="Ejc-3F-gYe" secondAttribute="bottom" constant="15" id="GPK-y6-rWZ"/>
+                            <constraint firstItem="BCv-4I-EGy" firstAttribute="top" secondItem="2Jn-Js-POh" secondAttribute="top" id="JTP-Zo-1Vc"/>
+                            <constraint firstItem="2Jn-Js-POh" firstAttribute="trailing" secondItem="FKx-OH-Ugu" secondAttribute="trailing" constant="20" id="P0h-x1-GNL"/>
+                            <constraint firstItem="2Jn-Js-POh" firstAttribute="trailing" secondItem="Ejc-3F-gYe" secondAttribute="trailing" constant="20" id="Xvw-er-CeB"/>
+                            <constraint firstItem="Ejc-3F-gYe" firstAttribute="leading" secondItem="2Jn-Js-POh" secondAttribute="leading" constant="20" id="cNg-fI-8up"/>
+                            <constraint firstItem="BCv-4I-EGy" firstAttribute="leading" secondItem="2Jn-Js-POh" secondAttribute="leading" constant="20" id="k3v-ND-pLw"/>
+                            <constraint firstItem="FKx-OH-Ugu" firstAttribute="leading" secondItem="2Jn-Js-POh" secondAttribute="leading" constant="20" id="ySL-gl-SoB"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Shop" image="house.circle.fill" catalog="system" id="CXN-tf-pAZ"/>
+                    <connections>
+                        <outlet property="allProductsCollectionView" destination="FKx-OH-Ugu" id="QMt-Bs-sxN"/>
+                        <outlet property="searchbar" destination="zQX-3Q-Vle" id="Cv2-2x-1f1"/>
+                        <outlet property="shopScreenTitle" destination="BCv-4I-EGy" id="Gxf-M1-jfC"/>
+                        <outlet property="sortButton" destination="ZnA-9R-VJb" id="Vg0-OW-2Mp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ycj-dY-qJc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="894" y="-263"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="house.circle.fill" catalog="system" width="128" height="123"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
